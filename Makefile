@@ -1,4 +1,7 @@
-all: vecadd vecmain out
+all: vecprod vecadd vecmain out
+
+vecprod: vecprod.c
+	gcc -Wall -c vecprod.c
 
 vecadd: vecadd.c
 	gcc -Wall -c vecadd.c
@@ -6,5 +9,5 @@ vecadd: vecadd.c
 vecmain: vecmain.c
 	gcc -Wall -c vecmain.c
 
-out: vecadd.o vecmain.o
-	gcc vecadd.o vecmain.o -o out 
+out: vecprod.o vecadd.o vecmain.o
+	gcc vecprod.o vecadd.o vecmain.o -o out 

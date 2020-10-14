@@ -20,6 +20,9 @@ int main() {
 	vector vec_sum = add(vec1,vec2);
 	printf("Sum of vectors: \n");
 	print(vec_sum);
+	vector vec_proc = eleProd(vec1,vec2);
+	printf("\nElement wise product of vectors: \n");
+	print(vec_proc);
 	printf("\n");
 }
 
