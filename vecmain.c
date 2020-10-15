@@ -11,6 +11,8 @@ void print(vector vec) {
 
 int main() {
 	vector vec1, vec2;
+	float norm;
+	
 	printf("Enter the elements of first vector: \n");
 	for(int i=0;i<DIM;i++)
 		scanf("%f",&vec1.x[i]);
@@ -24,5 +26,7 @@ int main() {
 	printf("\nElement wise product of vectors: \n");
 	print(vec_proc);
 	printf("\n");
+	norm = vecNorm(vec1, vec2);
+	printf("Norm of vectors: %f\n", norm);
 }
 

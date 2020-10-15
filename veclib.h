@@ -17,7 +17,7 @@ vector diff(vector vec1, vector vec2);
 float dotprod(vector vec1, vector vec2);
 // angle between between two vectors
 float angle(vector vec1, vector vec2);
-// Norm of a vector
-float norm(vector vec);
+// Norm of two vectors
+float vecNorm(vector vec1, vector vec2);
 
 #endif 
