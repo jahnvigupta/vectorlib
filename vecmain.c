@@ -30,5 +30,7 @@ int main() {
 	printf("Norm of vectors: %f\n", norm);
 	float dotp = dotprod(vec1, vec2);
 	printf("Dot product of two vectors: %f\n", dotp);
+	float angle_v = angle(vec1, vec2);
+	printf("Angle between two vectors: %f\n", angle_v);
 }
 
