@@ -28,5 +28,7 @@ int main() {
 	printf("\n");
 	norm = vecNorm(vec1, vec2);
 	printf("Norm of vectors: %f\n", norm);
+	float dotp = dotprod(vec1, vec2);
+	printf("Dot product of two vectors: %f\n", dotp);
 }
 
